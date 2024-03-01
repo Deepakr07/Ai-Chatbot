@@ -98,4 +98,8 @@ body{
     line-height: 55px;
     color:#62d2a2;
     cursor: pointer;
+    visibility: hidden;
+}
+.chat-input textarea:valid ~ span{
+    visibility: visible;
 }
