@@ -10,16 +10,57 @@ body{
     background: #E3F2fd;
 }
 
+.chatbot-toggler{
+    position: fixed;
+    right: 40px;
+    bottom: 35px;
+    height: 50px;
+    width: 50px;
+    color: #fff;
+    background: #62d2a2;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chatbot-toggler span {
+    position: absolute;
+}
+
+
+
+.show-chatbot .chatbot-toggler span:first-child,
+.chatbot-toggler span:last-child{
+    opacity: 0;
+}
+
+.show-chatbot .chatbot-toggler span:last-child{
+    opacity: 1;
+}
+
 .chatbot{
     background: #fff;
     width: 420px;
     border: 2px solid red;
     position: fixed;
     right: 40px;
-    bottom: 80px;
-    border-radius: 15px ;
+    bottom: 100px;
+    border-radius: 15px;
+    transform: scale(0.5);
+    opacity: 0;
+    pointer-events: none;
     box-shadow: 0 0 128px 0 rgba(0,0,0.1),0 32px 64 px -48px rgba(0,0,0,0.5);
     
+}
+
+.show-chatbot .chatbot{
+    transform: scale(1);
+    opacity: 1;
+    pointer-events: auto;
 }
 .chatbot header{
     border-radius: 15px 15px 0 0;
