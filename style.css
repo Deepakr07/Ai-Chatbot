@@ -13,9 +13,10 @@ body{
 .chatbot{
     background: #fff;
     width: 420px;
+    border: 2px solid red;
     position: fixed;
     right: 40px;
-    bottom: 100px;
+    bottom: 80px;
     border-radius: 15px ;
     box-shadow: 0 0 128px 0 rgba(0,0,0.1),0 32px 64 px -48px rgba(0,0,0,0.5);
     
@@ -70,16 +71,31 @@ body{
     border-radius: 10px 10px 10px 0;
 }
 .chatbot .chat-input{
+    border-radius: 0 0 15px 15px;
     position: absolute;
     bottom:0;
     width: 100%;
+    display: flex;
+    gap:5px;
+    background: #fff;
+    padding: 5px 20px;
     border-top: 1px solid #ccc;
 }
 .chat-input textarea{
+    height: 55px;
+    width: 100%;
     border: none;
     outline: none;
     font-size: 0.95 rem;
     resize: none;
     padding:16px 15px 16px 0
 
+}
+.chat-input span{
+    font-size: 1.35rem;
+    align-self: flex-end;
+    height: 55px;
+    line-height: 55px;
+    color:#62d2a2;
+    cursor: pointer;
 }
