@@ -97,10 +97,11 @@ body{
     width: 32px;
     background: #62d2a2;
     color: #fff;
-    text-align: center;
-    line-height: 32px;
     border-radius: 50%;
     margin-right: 5px;
+    text-align: center;
+    line-height: 32px;
+   
 }
 .chatbot .chat{
     display: flex;
