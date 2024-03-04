@@ -22,3 +22,4 @@ const handleChat = () => {
     chatbox.appendChild(createChatLi(userMessage,"outgoing"));
 }
 sendChatButton.addEventListener("click",handleChat);
+

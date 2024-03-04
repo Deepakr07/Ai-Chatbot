@@ -108,7 +108,7 @@ body{
 }
 .chatbox .outgoing{
     justify-content: flex-end;
-    margin: 20px 0;
+    margin: 10px 0;
 
 }
 .chatbot .chat p{
