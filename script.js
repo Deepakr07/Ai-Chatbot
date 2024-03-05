@@ -1,3 +1,4 @@
+//basic declarations
 const chatInput = document.querySelector(".chat-input textarea");
 const sendChatButton = document.querySelector(".chat-input span");
 const chatbox = document.querySelector(".chatbox")
