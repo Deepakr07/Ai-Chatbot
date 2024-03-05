@@ -52,8 +52,9 @@ body{
     border-radius: 15px;
     transform: scale(0.5);
     opacity: 0;
-    pointer-events: none;
     box-shadow: 0 0 128px 0 rgba(0,0,0.1),0 32px 64 px -48px rgba(0,0,0,0.5);
+    pointer-events: none;
+    
     
 }
 
