@@ -16,6 +16,7 @@ chatLi.innerHTML = chatContent;
 return chatLi;
 }
 
+
 const handleChat = () => {
     userMessage = chatInput.value.trim();
     if(!userMessage)return;
