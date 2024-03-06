@@ -4,7 +4,7 @@ const sendChatButton = document.querySelector(".chat-input span");
 const chatbox = document.querySelector(".chatbox")
 
 let userMessage;
-const API_KEY = "";
+const API_KEY = "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";
 
 const createChatLi = (message,className)=>{
     const chatLi = document.createElement("li");
@@ -29,6 +29,10 @@ const generateResponse = ()=>{
         body:JSON.stringify({
             model: "gpt-3.5-turbo",
             messages: [
+                {
+                    role: "system",
+                    content: "You are a helpful assistant."
+                  },
               {
                 role: "user",
                 content: userMessage
@@ -36,6 +40,15 @@ const generateResponse = ()=>{
             ]
         })
     }
+    //sending post request to api to get response
+    fetch(API_URL,requestOptions)
+        .then(res => res.json())
+        .then(data =>{
+            console.log(data);
+        })
+        .catch((error) => {
+            console.log(" error occured");
+        })
 }
 
 
