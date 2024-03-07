@@ -129,6 +129,10 @@ body{
     background: #62d2a2;
 
 }
+.chatbot .chat p.error{
+    color: #721c24;
+    background: #f8d7da;
+}
 .chatbox .incoming p {
     color: #000;
     background: #f2f2f2;

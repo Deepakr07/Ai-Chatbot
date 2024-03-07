@@ -53,6 +53,7 @@ const generateResponse = (incomingChatLi)=>{
             messageElement.textContent = data.choices[0].message.content;
         })
         .catch((error) => {
+            messageElement.classList.add("error")
             messageElement.textContent = "Oops Something went wrong.Please try again"
         }).finally(()=>chatbox.scrollTo(0,chatbox.scrollHeight));
 }
@@ -72,6 +73,7 @@ const handleChat = () => {
     },600);
     
 }
+
 sendChatButton.addEventListener("click",handleChat);
 chatbotToggler.addEventListener("click", () => document.body.classList.toggle("show-chatbot"));
 chatbotCloseBtn.addEventListener("click", () => document.body.classList.remove("show-chatbot"));
