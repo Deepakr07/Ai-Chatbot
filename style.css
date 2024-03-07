@@ -25,6 +25,11 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.show-chatbot .chatbot-toggler{
+    transform: rotate(90deg);
 }
 
 .chatbot-toggler span {
@@ -50,10 +55,12 @@ body{
     right: 40px;
     bottom: 100px;
     border-radius: 15px;
+    transform-origin: bottom right;
     transform: scale(0.5);
     opacity: 0;
     box-shadow: 0 0 128px 0 rgba(0,0,0.1),0 32px 64 px -48px rgba(0,0,0,0.5);
     pointer-events: none;
+    transition: all 0.1s ease;
     
     
 }
