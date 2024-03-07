@@ -50,7 +50,6 @@ body{
 .chatbot{
     background: #fff;
     width: 420px;
-    border: 2px solid red;
     position: fixed;
     right: 40px;
     bottom: 100px;
