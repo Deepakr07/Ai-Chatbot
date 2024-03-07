@@ -64,6 +64,8 @@ const handleChat = () => {
     userMessage = chatInput.value.trim();
     if(!userMessage)return;
     chatInput.value = "";
+    chatInput.style.height = `${inputInitHeight}px`;
+
     chatbox.appendChild(createChatLi(userMessage,"outgoing"));
     chatbox.scrollTo(0,chatbox.scrollHeight);
     setTimeout(() =>{
@@ -79,6 +81,14 @@ chatInput.addEventListener("input",() =>{
     chatInput.style.height = `${inputInitHeight}px`;
     chatInput.style.height = `${chatInput.scrollHeight}px`;
 })
+
+chatInput.addEventListener("keyup",(e) =>{
+    if(e.key === "Enter" && !e.shiftKey && window.innerWidth > 800){
+        e.preventDefault();
+        handleChat();
+    }
+    
+});
 
 sendChatButton.addEventListener("click",handleChat);
 chatbotToggler.addEventListener("click", () => document.body.classList.toggle("show-chatbot"));
