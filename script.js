@@ -1,6 +1,3 @@
-
-
-//basic declarations
 const chatInput = document.querySelector(".chat-input textarea");
 const sendChatButton = document.querySelector(".chat-input span");
 const chatbox = document.querySelector(".chatbox");
@@ -16,13 +13,12 @@ const createChatLi = (message,className)=>{
     chatLi.classList.add("chat",className);
     let chatContent = className === "outgoing"? `<p></p>`:` <span class="material-symbols-outlined">
     smart_toy
-</span>
-<p></p>`;
-chatLi.innerHTML = chatContent;
-chatLi.querySelector("p").textContent = message;
-return chatLi;
+    </span>
+    <p></p>`;
+    chatLi.innerHTML = chatContent;
+    chatLi.querySelector("p").textContent = message;
+    return chatLi;
 }
-
 
 const generateResponse = (incomingChatLi)=>{
     const API_URL = "https://api.openai.com/v1/chat/completions";
@@ -47,6 +43,8 @@ const generateResponse = (incomingChatLi)=>{
             ]
         })
     }
+
+    
     //sending post request to api to get response
     fetch(API_URL,requestOptions)
         .then(res => res.json())
