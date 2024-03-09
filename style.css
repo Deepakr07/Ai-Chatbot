@@ -45,7 +45,7 @@ body{
     opacity: 1;
 }
 
-.chatbot{
+.chatbot {
     background: #fff;
     width: 420px;
     position: fixed;
@@ -58,11 +58,10 @@ body{
     box-shadow: 0 0 128px 0 rgba(0,0,0.1),0 32px 64 px -48px rgba(0,0,0,0.5);
     pointer-events: none;
     transition: all 0.1s ease;
-    
-    
+    z-index: 9999; /* Ensure it appears above other elements */
 }
 
-.show-chatbot .chatbot{
+.show-chatbot .chatbot {
     transform: scale(1);
     opacity: 1;
     pointer-events: auto;
