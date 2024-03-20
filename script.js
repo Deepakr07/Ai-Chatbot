@@ -77,7 +77,7 @@ const handleChat = () => {
 
 chatInput.addEventListener("input",() =>{
     chatInput.style.height = `${inputInitHeight}px`;
-    chatInput.style.height = `${chatInput.scrollHeight}px`;
+    chatInput.style.height = `${chatInput.scrollHeight}px`; 
 })
 
 chatInput.addEventListener("keyup",(e) =>{
