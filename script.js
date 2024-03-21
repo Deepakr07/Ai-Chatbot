@@ -91,5 +91,5 @@ chatInput.addEventListener("keyup",(e) =>{
 
 sendChatButton.addEventListener("click",handleChat);
 chatbotToggler.addEventListener("click", () => document.body.classList.toggle("show-chatbot")); 
-chatbotCloseBtn.addEventListener("click", () => document.body.classList.remove("show-chatbot"));
+chatbotCloseBtn.addEventListener("click", () => document.body.classList.remove("show-chatbot")); 
  
