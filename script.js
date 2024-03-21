@@ -81,7 +81,7 @@ chatInput.addEventListener("input",() =>{
 })
 
 chatInput.addEventListener("keyup",(e) =>{
-    if(e.key === "Enter" && !e.shiftKey && window.innerWidth > 800){
+    if(e.key === "Enter" && !e.shiftKey && window.innerWidth > 800){ 
         e.preventDefault();
         handleChat();  
     }
