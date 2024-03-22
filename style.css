@@ -24,10 +24,11 @@ body{
     outline: none;
     cursor: pointer;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.2s ease;
     z-index: 9999;
+    align-items: center;
+    transition: all 0.2s ease;
+    justify-content: center;
+
 }
 
 .show-chatbot .chatbot-toggler{
